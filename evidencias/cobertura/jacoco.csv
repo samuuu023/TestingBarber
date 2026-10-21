@@ -1,0 +1,25 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.infrastructure.rest,ServicioController,0,43,0,0,0,10,0,6,0,6
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.infrastructure.rest,AuthController,0,34,0,0,0,7,0,4,0,4
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.infrastructure.rest,ServicioRequest,0,23,0,0,0,2,0,2,0,2
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.infrastructure.rest,ApiExceptionHandler,5,40,0,0,1,8,1,7,1,7
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.infrastructure.rest,AuthController.TokenResponse,0,12,0,0,0,1,0,1,0,1
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.infrastructure.rest,AuthController.LoginRequest,0,9,0,0,0,1,0,1,0,1
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.domain.exception,ReglaNegocioException,0,4,0,0,0,2,0,1,0,1
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.domain.exception,NoEncontradoException,0,4,0,0,0,2,0,1,0,1
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.domain.exception,CredencialesException,0,4,0,0,0,2,0,1,0,1
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.domain.exception,DuplicadoException,0,4,0,0,0,2,0,1,0,1
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.domain.model,Servicio,0,70,0,20,0,12,0,11,0,1
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.domain.model,Usuario,0,15,0,0,0,1,0,1,0,1
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.infrastructure.persistence.adapter,UsuarioRepositoryAdapter,0,25,0,0,0,4,0,3,0,3
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.infrastructure.persistence.adapter,ServicioRepositoryAdapter,0,101,0,2,0,18,0,8,0,7
+Cool Barber Shop - Testing,sv.edu.esfe.barberia,BarberiaApplication,5,3,0,0,2,1,1,1,1,1
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.infrastructure.persistence.entity,UsuarioEntity,0,3,0,0,0,1,0,1,0,1
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.infrastructure.persistence.entity,ServicioEntity,0,3,0,0,0,1,0,1,0,1
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.infrastructure.security,JwtTokenAdapter,0,44,0,0,0,16,0,2,0,2
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.infrastructure.security,SecurityConfig,5,151,2,4,1,26,2,13,0,12
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.infrastructure.security,BCryptPasswordAdapter,0,12,0,0,0,4,0,2,0,2
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.infrastructure.config,ApplicationConfig,0,15,0,0,0,3,0,3,0,3
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.infrastructure.config,SeedData,0,34,1,1,0,9,1,3,0,3
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.application.usecase,ServicioService,0,88,0,4,0,15,0,9,0,7
+Cool Barber Shop - Testing,sv.edu.esfe.barberia.application.usecase,LoginService,0,47,0,6,0,11,0,5,0,2

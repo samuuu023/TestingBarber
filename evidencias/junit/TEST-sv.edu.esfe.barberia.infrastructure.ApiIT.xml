@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report.xsd" version="3.0.2" name="sv.edu.esfe.barberia.infrastructure.ApiIT" time="55.729" tests="19" errors="0" skipped="0" failures="0">
+  <testcase name="actualizarAusente" classname="sv.edu.esfe.barberia.infrastructure.ApiIT" time="12.125">
+    </testcase>
+  <testcase name="rechazarPrecioNegativo" classname="sv.edu.esfe.barberia.infrastructure.ApiIT" time="0.313" />
+  <testcase name="rechazarOtraAudiencia" classname="sv.edu.esfe.barberia.infrastructure.ApiIT" time="0.182" />
+  <testcase name="rechazarJwtVencido" classname="sv.edu.esfe.barberia.infrastructure.ApiIT" time="0.171" />
+  <testcase name="meNoExponeHash" classname="sv.edu.esfe.barberia.infrastructure.ApiIT" time="0.244" />
+  <testcase name="aceptarCrudCompleto" classname="sv.edu.esfe.barberia.infrastructure.ApiIT" time="0.302" />
+  <testcase name="escrituraSinJwtNoModifica" classname="sv.edu.esfe.barberia.infrastructure.ApiIT" time="0.922" />
+  <testcase name="rechazarOtroEmisor" classname="sv.edu.esfe.barberia.infrastructure.ApiIT" time="0.162" />
+  <testcase name="rechazarJwtManipulado" classname="sv.edu.esfe.barberia.infrastructure.ApiIT" time="0.151" />
+  <testcase name="rechazarDuracionNoMultiplo" classname="sv.edu.esfe.barberia.infrastructure.ApiIT" time="0.181" />
+  <testcase name="rechazarSinJwt" classname="sv.edu.esfe.barberia.infrastructure.ApiIT" time="0.142" />
+  <testcase name="rechazarNombreVacio" classname="sv.edu.esfe.barberia.infrastructure.ApiIT" time="0.155" />
+  <testcase name="humoSalud" classname="sv.edu.esfe.barberia.infrastructure.ApiIT" time="0.173" />
+  <testcase name="rechazarJsonRoto" classname="sv.edu.esfe.barberia.infrastructure.ApiIT" time="0.145" />
+  <testcase name="loginIncorrecto" classname="sv.edu.esfe.barberia.infrastructure.ApiIT" time="0.246" />
+  <testcase name="rechazarRolUsuario" classname="sv.edu.esfe.barberia.infrastructure.ApiIT" time="0.15" />
+  <testcase name="borrarAusente" classname="sv.edu.esfe.barberia.infrastructure.ApiIT" time="0.106" />
+  <testcase name="rechazarDuplicado" classname="sv.edu.esfe.barberia.infrastructure.ApiIT" time="0.202" />
+  <testcase name="loginEmailInvalido" classname="sv.edu.esfe.barberia.infrastructure.ApiIT" time="0.256" />
+</testsuite>

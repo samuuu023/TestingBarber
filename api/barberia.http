@@ -1,0 +1,31 @@
+@base = http://localhost:8080
+@token = PEGAR_ACCESS_TOKEN_DEL_LOGIN
+@id = 1
+### Salud
+GET {{base}}/api/salud
+### Login
+POST {{base}}/api/auth/login
+Content-Type: application/json
+
+{"email":"admin@barberia.com","password":"Admin123!"}
+### Crear servicio
+POST {{base}}/api/servicios
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{"nombre":"Corte clásico","precio":6.00,"duracionMinutos":30}
+### Listar
+GET {{base}}/api/servicios
+Authorization: Bearer {{token}}
+### Consultar (usar ID devuelto al crear)
+GET {{base}}/api/servicios/{{id}}
+Authorization: Bearer {{token}}
+### Actualizar
+PUT {{base}}/api/servicios/{{id}}
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{"nombre":"Corte clásico","precio":8.00,"duracionMinutos":45}
+### Eliminar
+DELETE {{base}}/api/servicios/{{id}}
+Authorization: Bearer {{token}}

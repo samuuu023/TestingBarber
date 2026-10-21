@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-failsafe-plugin/xsd/failsafe-test-report.xsd" version="3.0.2" name="sv.edu.esfe.barberia.infrastructure.ServicioRepositoryAdapterIT" time="0.916" tests="5" errors="0" skipped="0" failures="0">
+  <testcase name="mismoIdNoEsDuplicado" classname="sv.edu.esfe.barberia.infrastructure.ServicioRepositoryAdapterIT" time="0.039">
+    </testcase>
+  <testcase name="duplicadoIgnoraMayusculas" classname="sv.edu.esfe.barberia.infrastructure.ServicioRepositoryAdapterIT" time="0.078">
+    </testcase>
+  <testcase name="restriccionUnicaEnBase" classname="sv.edu.esfe.barberia.infrastructure.ServicioRepositoryAdapterIT" time="0.052">
+    </testcase>
+  <testcase name="borrarRegistro" classname="sv.edu.esfe.barberia.infrastructure.ServicioRepositoryAdapterIT" time="0.027">
+    </testcase>
+  <testcase name="guardarYRecuperar" classname="sv.edu.esfe.barberia.infrastructure.ServicioRepositoryAdapterIT" time="0.031">
+    </testcase>
+</testsuite>

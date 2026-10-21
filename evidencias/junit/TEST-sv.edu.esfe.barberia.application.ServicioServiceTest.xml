@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="sv.edu.esfe.barberia.application.ServicioServiceTest" time="11.968" tests="11" errors="0" skipped="0" failures="0">
+  <testcase name="actualizarAusenteNoGuarda" classname="sv.edu.esfe.barberia.application.ServicioServiceTest" time="11.754">
+    </testcase>
+  <testcase name="listar" classname="sv.edu.esfe.barberia.application.ServicioServiceTest" time="0.017" />
+  <testcase name="ignorarIdClienteAlCrear" classname="sv.edu.esfe.barberia.application.ServicioServiceTest" time="0.033" />
+  <testcase name="actualizarExistente" classname="sv.edu.esfe.barberia.application.ServicioServiceTest" time="0.039" />
+  <testcase name="buscarAusente" classname="sv.edu.esfe.barberia.application.ServicioServiceTest" time="0.004" />
+  <testcase name="buscarExistente" classname="sv.edu.esfe.barberia.application.ServicioServiceTest" time="0.003" />
+  <testcase name="crearCuandoNoExiste" classname="sv.edu.esfe.barberia.application.ServicioServiceTest" time="0.005" />
+  <testcase name="noCrearDuplicado" classname="sv.edu.esfe.barberia.application.ServicioServiceTest" time="0.03" />
+  <testcase name="eliminarAusenteNoBorra" classname="sv.edu.esfe.barberia.application.ServicioServiceTest" time="0.018" />
+  <testcase name="actualizarNombreDuplicado" classname="sv.edu.esfe.barberia.application.ServicioServiceTest" time="0.003" />
+  <testcase name="eliminarExistente" classname="sv.edu.esfe.barberia.application.ServicioServiceTest" time="0.002" />
+</testsuite>

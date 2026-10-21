@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="sv.edu.esfe.barberia.domain.ServicioTest" time="0.125" tests="21" errors="0" skipped="0" failures="0">
+  <testcase name="rechazarNombreLargo" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.001" />
+  <testcase name="rechazarNombreVacio(String)[1]" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.013" />
+  <testcase name="rechazarNombreVacio(String)[2]" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.003" />
+  <testcase name="rechazarNombreVacio(String)[3]" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.001" />
+  <testcase name="rechazarNombreVacio(String)[4]" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.002" />
+  <testcase name="rechazarPrecioNulo" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.001" />
+  <testcase name="rechazarDuracion(int)[1]" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.005" />
+  <testcase name="rechazarDuracion(int)[2]" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.002" />
+  <testcase name="rechazarDuracion(int)[3]" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.001" />
+  <testcase name="rechazarDuracion(int)[4]" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.002" />
+  <testcase name="rechazarDuracion(int)[5]" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.001" />
+  <testcase name="crearValido" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.001" />
+  <testcase name="rechazarPrecioInvalido(String)[1]" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.001" />
+  <testcase name="rechazarPrecioInvalido(String)[2]" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.001" />
+  <testcase name="rechazarPrecioInvalido(String)[3]" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.001" />
+  <testcase name="aceptarPrecioLimite(String)[1]" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.003" />
+  <testcase name="aceptarPrecioLimite(String)[2]" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.001" />
+  <testcase name="aceptarPrecioLimite(String)[3]" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.001" />
+  <testcase name="aceptarDuracion(int)[1]" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.001" />
+  <testcase name="aceptarDuracion(int)[2]" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.002" />
+  <testcase name="aceptarDuracion(int)[3]" classname="sv.edu.esfe.barberia.domain.ServicioTest" time="0.001" />
+</testsuite>

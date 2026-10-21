@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ServicioService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Cool Barber Shop - Testing</a> &gt; <a href="index.source.html" class="el_package">sv.edu.esfe.barberia.application.usecase</a> &gt; <span class="el_source">ServicioService.java</span></div><h1>ServicioService.java</h1><pre class="source lang-java linenums">package sv.edu.esfe.barberia.application.usecase;
+
+import java.util.List;
+import sv.edu.esfe.barberia.application.port.in.ServicioUseCase;
+import sv.edu.esfe.barberia.application.port.out.ServicioRepositoryPort;
+import sv.edu.esfe.barberia.domain.exception.*;
+import sv.edu.esfe.barberia.domain.model.Servicio;
+
+/** Caso de uso aislable con Mockito; persistencia mediante puerto. */
+public class ServicioService implements ServicioUseCase {
+  private final ServicioRepositoryPort repo;
+
+<span class="fc" id="L13">  public ServicioService(ServicioRepositoryPort repo) {</span>
+<span class="fc" id="L14">    this.repo = repo;</span>
+<span class="fc" id="L15">  }</span>
+
+  public Servicio crear(Servicio s) {
+<span class="fc bfc" id="L18" title="All 2 branches covered.">    if (repo.existeNombre(s.nombre(), null))</span>
+<span class="fc" id="L19">      throw new DuplicadoException(&quot;Ya existe un servicio con ese nombre&quot;);</span>
+<span class="fc" id="L20">    return repo.guardar(new Servicio(null, s.nombre(), s.precio(), s.duracionMinutos()));</span>
+  }
+
+  public Servicio actualizar(Long id, Servicio s) {
+<span class="fc" id="L24">    buscar(id);</span>
+<span class="fc bfc" id="L25" title="All 2 branches covered.">    if (repo.existeNombre(s.nombre(), id))</span>
+<span class="fc" id="L26">      throw new DuplicadoException(&quot;Ya existe un servicio con ese nombre&quot;);</span>
+<span class="fc" id="L27">    return repo.guardar(new Servicio(id, s.nombre(), s.precio(), s.duracionMinutos()));</span>
+  }
+
+  public Servicio buscar(Long id) {
+<span class="fc" id="L31">    return repo.buscar(id).orElseThrow(() -&gt; new NoEncontradoException(&quot;Servicio no encontrado&quot;));</span>
+  }
+
+  public List&lt;Servicio&gt; listar() {
+<span class="fc" id="L35">    return repo.listar();</span>
+  }
+
+  public void eliminar(Long id) {
+<span class="fc" id="L39">    buscar(id);</span>
+<span class="fc" id="L40">    repo.eliminar(id);</span>
+<span class="fc" id="L41">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

@@ -1,0 +1,68 @@
+[
+  {
+    "paso": "GET /api/salud",
+    "esperado": 200,
+    "obtenido": 200,
+    "aprobado": true
+  },
+  {
+    "paso": "GET /api/servicios",
+    "esperado": 401,
+    "obtenido": 401,
+    "aprobado": true
+  },
+  {
+    "paso": "POST /api/auth/login",
+    "esperado": 200,
+    "obtenido": 200,
+    "aprobado": true
+  },
+  {
+    "paso": "GET /api/auth/me",
+    "esperado": 200,
+    "obtenido": 200,
+    "aprobado": true
+  },
+  {
+    "paso": "POST /api/servicios",
+    "esperado": 201,
+    "obtenido": 201,
+    "aprobado": true
+  },
+  {
+    "paso": "GET /api/servicios/1",
+    "esperado": 200,
+    "obtenido": 200,
+    "aprobado": true
+  },
+  {
+    "paso": "GET /api/servicios",
+    "esperado": 200,
+    "obtenido": 200,
+    "aprobado": true
+  },
+  {
+    "paso": "PUT /api/servicios/1",
+    "esperado": 200,
+    "obtenido": 200,
+    "aprobado": true
+  },
+  {
+    "paso": "POST /api/servicios",
+    "esperado": 409,
+    "obtenido": 409,
+    "aprobado": true
+  },
+  {
+    "paso": "DELETE /api/servicios/1",
+    "esperado": 204,
+    "obtenido": 204,
+    "aprobado": true
+  },
+  {
+    "paso": "GET /api/servicios/1",
+    "esperado": 404,
+    "obtenido": 404,
+    "aprobado": true
+  }
+]

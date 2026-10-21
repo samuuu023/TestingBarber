@@ -1,0 +1,5 @@
+{
+  "aprobado": true,
+  "motor": "H2 archivo",
+  "comprobacion": "Registro id\u00e9ntico despu\u00e9s de detener y reiniciar el JAR; eliminado al terminar."
+}

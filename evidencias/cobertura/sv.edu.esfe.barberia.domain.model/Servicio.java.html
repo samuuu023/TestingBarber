@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Servicio.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Cool Barber Shop - Testing</a> &gt; <a href="index.source.html" class="el_package">sv.edu.esfe.barberia.domain.model</a> &gt; <span class="el_source">Servicio.java</span></div><h1>Servicio.java</h1><pre class="source lang-java linenums">package sv.edu.esfe.barberia.domain.model;
+
+import java.math.BigDecimal;
+import sv.edu.esfe.barberia.domain.exception.ReglaNegocioException;
+
+/** Dominio puro: no conoce Spring, JPA ni HTTP. */
+public record Servicio(Long id, String nombre, BigDecimal precio, int duracionMinutos) {
+<span class="fc" id="L8">  public Servicio {</span>
+<span class="fc bfc" id="L9" title="All 6 branches covered.">    if (nombre == null || nombre.isBlank() || nombre.strip().length() &gt; 100)</span>
+<span class="fc" id="L10">      throw new ReglaNegocioException(&quot;Nombre obligatorio, máximo 100 caracteres&quot;);</span>
+<span class="fc" id="L11">    nombre = nombre.strip();</span>
+<span class="fc bfc" id="L12" title="All 2 branches covered.">    if (precio == null</span>
+<span class="fc bfc" id="L13" title="All 2 branches covered.">        || precio.signum() &lt; 0</span>
+<span class="fc bfc" id="L14" title="All 2 branches covered.">        || precio.compareTo(new BigDecimal(&quot;9999.99&quot;)) &gt; 0</span>
+<span class="fc bfc" id="L15" title="All 2 branches covered.">        || precio.stripTrailingZeros().scale() &gt; 2)</span>
+<span class="fc" id="L16">      throw new ReglaNegocioException(&quot;Precio entre 0 y 9999.99, máximo dos decimales&quot;);</span>
+<span class="fc bfc" id="L17" title="All 6 branches covered.">    if (duracionMinutos &lt; 15 || duracionMinutos &gt; 240 || duracionMinutos % 15 != 0)</span>
+<span class="fc" id="L18">      throw new ReglaNegocioException(&quot;Duración de 15 a 240 en intervalos de 15 minutos&quot;);</span>
+<span class="fc" id="L19">  }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.13.202504020838</span></div></body></html>

@@ -1,0 +1,12 @@
+{
+  "tipo": "carga local limitada GET /api/servicios",
+  "requests": 100,
+  "workers": 5,
+  "ok": 100,
+  "errores": 0,
+  "duracion_s": 0.783,
+  "rps": 127.72,
+  "media_ms": 38.26,
+  "p95_ms": 180.41,
+  "limite": "No es una prueba de estr\u00e9s, producci\u00f3n ni carga sostenida."
+}
